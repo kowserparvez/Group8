@@ -13,7 +13,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
-
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -28,11 +27,11 @@ public class CommonAPI {
 
     @BeforeMethod
     @Parameters({"browser_name","operation_system","URL"})
-    public void setUp(@Optional("chrome") String browserName, @Optional("Windows") String os, @Optional("http://www.facebook.com") String url){
+    public void setUp(@Optional("chrome") String browserName, @Optional("Windows") String os, @Optional("https://www.tdbank.com/") String url){
         getLocalDriver(browserName,os);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
-        driver.get(url);
+        driver.navigate().to(url);
         driver.manage().window().maximize();
 
     }
@@ -45,7 +44,7 @@ public class CommonAPI {
     public WebDriver getLocalDriver(String browserName, String os){
         if(browserName.equalsIgnoreCase("chrome")){
             if(os.equalsIgnoreCase("windows")){
-                System.setProperty("webdriver.chrome.driver", "../Generic/drive/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Kowser\\IdeaProjects\\group8_automation\\Generic\\driver\\chromedriver.exe");
                 driver = new ChromeDriver();
             }else if(os.equalsIgnoreCase("mac")){
                 System.setProperty("webdriver.chrome.driver", "../Generic/drive/chromedriver");
