@@ -14,8 +14,9 @@
         <module>Costco</module>
         <module>Ebay</module>
         <module>Facebook</module>
-        <module>CNN</module>
-        <module>Chase</module>
+        <module>Walmart</module>
+        <module>TDBank</module>
+        <module>Netflix</module>
     </modules>
 
     <dependencyManagement>
