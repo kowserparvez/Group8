@@ -27,7 +27,7 @@ public class CommonAPI {
 
     @BeforeMethod
     @Parameters({"browser_name","operation_system","URL"})
-    public void setUp(@Optional("chrome") String browserName, @Optional("Windows") String os, @Optional("https://www.tdbank.com/") String url){
+    public void setUp(@Optional("chrome") String browserName, @Optional("Windows") String os, @Optional("https://www.facebook.com/") String url){
         getLocalDriver(browserName,os);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
@@ -44,7 +44,7 @@ public class CommonAPI {
     public WebDriver getLocalDriver(String browserName, String os){
         if(browserName.equalsIgnoreCase("chrome")){
             if(os.equalsIgnoreCase("windows")){
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Kowser\\IdeaProjects\\group8_automation\\Generic\\driver\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\rahma\\Group8\\Generic\\driver\\chromedriver.exe");
                 driver = new ChromeDriver();
             }else if(os.equalsIgnoreCase("mac")){
                 System.setProperty("webdriver.chrome.driver", "../Generic/drive/chromedriver");
@@ -64,9 +64,9 @@ public class CommonAPI {
 
     public void cleanUp(){
 
-        driver.quit();
+        //driver.quit();
     }
-
+     //Click
     public void clickByCss(String locator) {
         driver.findElement(By.cssSelector(locator)).click();
     }
@@ -90,6 +90,7 @@ public class CommonAPI {
     }
 
     public void clearInputField(String locator){
+
         driver.findElement(By.cssSelector(locator)).clear();
     }
     public List<WebElement> getListOfWebElementsById(String locator) {

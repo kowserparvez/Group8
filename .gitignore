@@ -1,4 +1,17 @@
 # Created by .ignore support plugin (hsz.mobi)
-/.idea/
+*.iml
+.idea
+*.iws
 /group8_automation.iml
 /TDBank/TDBank.iml
+targe/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+#Avoid ingnoring Maven wrapper jar files(.jar files are usually ignored)
+!/.mvn/wrapper/maven-wrapper.jar
