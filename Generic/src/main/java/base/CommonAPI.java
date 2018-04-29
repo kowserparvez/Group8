@@ -29,8 +29,8 @@ public class CommonAPI {
     @Parameters({"browser_name","operation_system","URL"})
     public void setUp(@Optional("chrome") String browserName, @Optional("Windows") String os, @Optional("https://www.facebook.com/") String url){
         getLocalDriver(browserName,os);
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(45,TimeUnit.SECONDS);
         driver.navigate().to(url);
         driver.manage().window().maximize();
 
@@ -64,7 +64,7 @@ public class CommonAPI {
 
     public void cleanUp(){
 
-        //driver.quit();
+        driver.quit();
     }
      //Click
     public void clickByCss(String locator) {
@@ -128,7 +128,7 @@ public class CommonAPI {
         String url = driver.getCurrentUrl();
         return url;
     }
-    public void navigateBack(){
+    public static void navigateBack(){
         driver.navigate().back();
     }
     public void navigateForward(){
@@ -157,14 +157,13 @@ public class CommonAPI {
         }
         return items;
     }
-
     public void selectOptionByVisibleText(WebElement element, String value) {
         Select select = new Select(element);
         select.selectByVisibleText(value);
     }
-    public void sleepFor(int sec)throws InterruptedException{
-        Thread.sleep(sec * 1000);
-    }
+   // public static void sleepFor(int sec)throws InterruptedException{
+        //Thread.sleep(sec * 1000);
+    //}
     public void mouseHoverByCSS(String locator){
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -238,7 +237,7 @@ public class CommonAPI {
         FileUtils.copyFile(file,new File("screenShots.png"));
     }
     //Synchronization
-    public void waitUntilClickAble(By locator){
+    public static void waitUntilClickAble(By locator){
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
@@ -267,5 +266,4 @@ public class CommonAPI {
         splitString = StringUtils.join(StringUtils.splitByCharacterTypeCamelCase(st), ' ');
         return splitString;
     }
-
 }

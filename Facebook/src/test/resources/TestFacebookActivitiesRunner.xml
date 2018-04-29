@@ -1,6 +1,3 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="Facebook Automation Script " parallel="false">
 
     <parameter name="useCloudEnv" value="false"/>
@@ -13,12 +10,7 @@
 
     <test name = "Facebook Home">
         <classes>
-            <!--<class name="home.page.TestBrowser"/>-->
-            <!--<class name="home.page.TestSignIn"/>-->
-            <!--<class name="home.page.TestToCreatePage"/>-->
-            <class name="home.page.TestToPostInTLine"/>
-            <!--<class name="home.page.TestToSignUp"/>-->
-
+            <class name="facebook.activities.TestToFaceBookActivities"/>
         </classes>
     </test>
-        </suite>
+</suite>
