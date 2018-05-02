@@ -15,8 +15,9 @@
 
     <test name = "TDBank Home">
         <classes>
-            <class name="test.pages.HomePageTest"/>
-            <!--<class name="search.SearchItems"/>-->
+            <!--<class name="test.pages.HomePageTest"/>-->
+            <!--<class name="test.authentication.OnlineBankingLoginTest"/>-->
+            <class name="test.authentication.InvalidOnlineBankingLoginTest"/>
             <!--<class name="search.DropDownMenuSearch"/>-->
         </classes>
     </test>
