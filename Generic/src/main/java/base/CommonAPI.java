@@ -26,7 +26,7 @@ public class CommonAPI {
     public static WebDriver driver = null;
 
     @BeforeMethod
-    @Parameters({"browser_name","operation_system","URL"})
+    @Parameters({"url"})
     public void setUp(@Optional("chrome") String browserName, @Optional("Windows") String os, @Optional("https://www.tdbank.com/") String url){
         getLocalDriver(browserName,os);
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -41,10 +41,13 @@ public class CommonAPI {
         driver.close();
     }
 
+    public void setSearchBox() {
+    }
+
     public WebDriver getLocalDriver(String browserName, String os){
         if(browserName.equalsIgnoreCase("chrome")){
             if(os.equalsIgnoreCase("windows")){
-                System.setProperty("webdriver.chrome.driver", "C:\\Users\\Kowser\\IdeaProjects\\group8_automation\\Generic\\driver\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "../Users/sayedsiddeque/Development/Group8/Generic/driver/chromedriver");
                 driver = new ChromeDriver();
             }else if(os.equalsIgnoreCase("mac")){
                 System.setProperty("webdriver.chrome.driver", "../Generic/drive/chromedriver");

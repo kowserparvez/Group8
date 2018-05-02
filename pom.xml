@@ -12,11 +12,12 @@
         <module>Generic</module>
         <module>Cigna</module>
         <module>Costco</module>
-        <module>Ebay</module>
         <module>Facebook</module>
         <module>Walmart</module>
         <module>TDBank</module>
         <module>Netflix</module>
+        <module>MetroPlus</module>
+        <module>Ebay</module>
     </modules>
 
     <dependencyManagement>
