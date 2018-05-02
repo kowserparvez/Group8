@@ -41,7 +41,7 @@ public class LogInPage extends CommonAPI {
         typeUserEmail();
         typeUserPassword();
         clickOnAuthenticate();
-        //checking git project
+        //checking git pus
     }
 }
 
