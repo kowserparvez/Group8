@@ -15,7 +15,7 @@ public class TestSearch extends SearchPage {
 
        home.clickLogin ();
        login.clicksgnBt ();
-       hp.setSearchBox ();
+       hp.searchBox ();
 
         }
 
