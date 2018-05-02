@@ -27,7 +27,7 @@ public class CommonAPI {
 
     @BeforeMethod
     @Parameters({"browser_name","operation_system","URL"})
-    public void setUp(@Optional("chrome") String browserName, @Optional("Windows") String os,@Optional("https://www.facebook.com/") String url){
+    public void setUp(@Optional("chrome") String browserName, @Optional("Windows") String os,@Optional("https://www.costco.com") String url){
         getLocalDriver(browserName,os);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
