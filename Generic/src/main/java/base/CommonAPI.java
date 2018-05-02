@@ -27,20 +27,17 @@ public class CommonAPI {
 
     @BeforeMethod
     @Parameters({"browser_name","operation_system","URL"})
-    public void setUp(@Optional("chrome") String browserName, @Optional("Windows") String os, @Optional("https://www.facebook.com/") String url){
+    public void setUp(@Optional("chrome") String browserName, @Optional("Windows") String os,@Optional("https://www.facebook.com/") String url){
         getLocalDriver(browserName,os);
-        driver.manage().timeouts().implicitlyWait(45, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(45,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
         driver.navigate().to(url);
         driver.manage().window().maximize();
-
     }
-
     @AfterMethod
     public void tearDown(){
         driver.close();
     }
-
     public WebDriver getLocalDriver(String browserName, String os){
         if(browserName.equalsIgnoreCase("chrome")){
             if(os.equalsIgnoreCase("windows")){
@@ -73,7 +70,9 @@ public class CommonAPI {
     public void clickByXpath(String locator) {
         driver.findElement(By.xpath(locator)).click();
     }
-
+    public void clickByLinkedText(String locator) {
+        driver.findElement(By.linkText(locator)).click();
+    }
     public void typeByCss(String locator, String value) {
         driver.findElement(By.cssSelector(locator)).sendKeys(value);
     }
@@ -174,9 +173,7 @@ public class CommonAPI {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
-
         }
-
     }
     public void mouseHoverByXpath(String locator){
         try {
@@ -188,9 +185,7 @@ public class CommonAPI {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
             action.moveToElement(element).perform();
-
         }
-
     }
     //handling Alert
     public void okAlert(){
@@ -206,19 +201,15 @@ public class CommonAPI {
     public void iframeHandle(WebElement element){
         driver.switchTo().frame(element);
     }
-
     public void goBackToHomeWindow(){
         driver.switchTo().defaultContent();
     }
-
     //get Links
     public void getLinks(String locator){
         driver.findElement(By.linkText(locator)).findElement(By.tagName("a")).getText();
     }
-
     public static void captureScreenshot(WebDriver driver, String screenshotName){
-
-        DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
+    DateFormat df = new SimpleDateFormat("(MM.dd.yyyy-HH:mma)");
         Date date = new Date();
         df.format(date);
 
@@ -229,7 +220,6 @@ public class CommonAPI {
         } catch (Exception e) {
             System.out.println("Exception while taking screenshot "+e.getMessage());;
         }
-
     }
     //Taking Screen shots
     public void takeScreenShot()throws IOException {

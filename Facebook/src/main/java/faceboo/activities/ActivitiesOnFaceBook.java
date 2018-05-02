@@ -6,12 +6,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 
 public class ActivitiesOnFaceBook extends LogInPage {
-
     public void login()throws InterruptedException{
         LogInPage logInPage = PageFactory.initElements(driver, LogInPage.class);
         logInPage.logInToFacebook();
     }
-
     public void viewMessge() throws InterruptedException {
         login();
         driver.findElement(By.xpath("//*[@id='navItem_217974574879787']/a/div")).click();

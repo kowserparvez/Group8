@@ -1,5 +1,4 @@
 package authentication;
-
 import base.CommonAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +10,6 @@ public class LogInPage extends CommonAPI {
     public WebElement userPasswordInput;
     @FindBy(css ="#loginbutton")
     public WebElement clickLogInButtonElement;
-
     public WebElement getUserEmailInput() {
         return userEmailInput;
     }

@@ -11,8 +11,8 @@ public class CreatePage extends LogInPage{
         LogInPage logInPage = PageFactory.initElements(driver, LogInPage.class);
         logInPage.logInToFacebook();
         driver.findElement(By.xpath("//*[@id='userNavigationLabel']")).click();
-
-        //driver.findElement(By.xpath("//*[@id='organization']/div/div[1]/div")).click();
+        driver.findElement(By.xpath("//*[@id='js_2ft']/div/div/ul/li[5]")).click();
+        driver.findElement(By.xpath("//*[@id='organization']/div/div[1]/div")).click();
     }
  }
 
