@@ -18,6 +18,7 @@
         <module>Netflix</module>
         <module>MetroPlus</module>
         <module>Ebay</module>
+        <module>cnn</module>
     </modules>
 
     <dependencyManagement>

@@ -9,13 +9,14 @@ import org.openqa.selenium.support.PageFactory;
 public class TestSearch extends SearchPage {
     @Test
     public void test1() {
-        HomePage home = PageFactory.initElements ( driver, HomePage.class);
-        LogInPage login = PageFactory.initElements ( driver, LogInPage.class );
+       // HomePage home = PageFactory.initElements ( driver, HomePage.class);
         SearchPage hp = PageFactory.initElements ( driver, SearchPage.class );
+        //LogInPage login = PageFactory.initElements ( driver, LogInPage.class );
 
-       home.clickLogin ();
-       login.clicksgnBt ();
-       hp.searchBox ();
+       //home.clickLogin ();
+        hp.searchBox ();
+       //login.clicksgnBt ();
+
 
         }
 

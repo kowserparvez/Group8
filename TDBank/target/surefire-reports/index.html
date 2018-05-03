@@ -29,15 +29,15 @@
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-test.pages.HomePageTest">
+            <a href="#" panel-name="suite-test.pages.HomePageTest" class="navigator-link">
               <span class="suite-name border-passed">test.pages.HomePageTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-test.pages.HomePageTest">
+                  <a href="#" panel-name="test-xml-test.pages.HomePageTest" class="navigator-link ">
                     <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-test.pages.HomePageTest">
+                  <a href="#" panel-name="testlist-test.pages.HomePageTest" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-test.pages.HomePageTest">
+                  <a href="#" panel-name="group-test.pages.HomePageTest" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-test.pages.HomePageTest">
+                  <a href="#" panel-name="times-test.pages.HomePageTest" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-test.pages.HomePageTest">
+                  <a href="#" panel-name="reporter-test.pages.HomePageTest" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-test.pages.HomePageTest">
+                  <a href="#" panel-name="ignored-methods-test.pages.HomePageTest" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-test.pages.HomePageTest">
+                  <a href="#" panel-name="chronological-test.pages.HomePageTest" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -101,8 +101,8 @@
                     </span>
                     <div class="method-list-content passed suite-test.pages.HomePageTest">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-test.pages.HomePageTest" title="test.pages.HomePageTest" hash-for-method="testHome">testHome</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-test.pages.HomePageTest" title="test.pages.HomePageTest" class="method navigator-link" hash-for-method="testHome">testHome</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-test.pages.HomePageTest -->
@@ -140,8 +140,8 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite verbose=&quot;0&quot; name=&quot;test.pages.HomePageTest&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;Command line test&quot;&gt;
+&lt;suite name=&quot;test.pages.HomePageTest&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;test.pages.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
@@ -187,12 +187,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testHome')
 data.setCell(0, 2, 'test.pages.HomePageTest')
-data.setCell(0, 3, 9);
+data.setCell(0, 3, 11);
 window.suiteTableData['test.pages.HomePageTest']= { tableData: data, tableDiv: 'times-div-test.pages.HomePageTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 ms</span>
+              <span class="suite-total-time">Total running time: 11 ms</span>
               <div id="times-div-test.pages.HomePageTest">
               </div> <!-- times-div-test.pages.HomePageTest -->
             </div> <!-- times-div -->
@@ -219,18 +219,34 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">test.pages.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(chrome, Windows, https://www.tdbank.com/)</span>
+              <div class="configuration-suite before">
+                <span class="method-name">extentSetup(org.testng.TestRunner@6a2eea2a)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(false, false, OS X, 10, firefox, 34, http://www.ebay.com)</span>
+                <span class="method-start">643 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">startExtent(public void test.pages.HomePageTest.testHome())</span>
+                <span class="method-start">11835 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testHome</span>
-                <span class="method-start">8302 ms</span>
+                <span class="method-start">11843 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">8312 ms</span>
+                <span class="method-name">afterEachTestMethod([TestResult name=testHome status=SUCCESS method=HomePageTest.testHome()[pri:0, instance:test.pages.H...)</span>
+                <span class="method-start">11856 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">13305 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">generateReport</span>
+                <span class="method-start">13328 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
