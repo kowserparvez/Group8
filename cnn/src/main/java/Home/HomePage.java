@@ -9,19 +9,24 @@ import org.openqa.selenium.support.FindBy;
 public class HomePage extends CommonAPI {
 
 
-    @FindBy(xpath = "//div[@class='nav-menu__hamburger]")
+    @FindBy(xpath = "//*[@id='menu']")
     WebElement menu;
-    @FindBy(id = "search-input-field")
+    @FindBy(xpath = "//div[@id='search-button']")
+    WebElement clickon;
+    @FindBy(xpath = "//input[@class='search__input-field']")
     WebElement search;
 
     public void menu() {
+        //  waitUntilClickAble (By.xpath ( "//*[@id='menu']"));
         menu.click ();
     }
-        public void search() {
-            search.sendKeys ( "Latest News" );
 
+    public void clickon() {
+        clickon.click ();
+    }
 
+    public void search() {
+      //  waitUntilClickAble (By.xpath ( "//input[@class='search__input-field']"));
+        search.sendKeys ( "world news" );
     }
 }
-
-
