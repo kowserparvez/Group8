@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Extent Report DirectoryC:\Users\Kowser\IdeaProjects\group8_automation\TDBank\test-output\html]]>
+    </line>
+    <line>
+      <![CDATA[InvalidOnlineBankingLoginTest :invalid Login Test]]>
+    </line>
+    <line>
+      <![CDATA[InvalidOnlineBankingLogin :Invalid Login]]>
+    </line>
+  </reporter-output>
+  <suite name="TDBank Automation Test" duration-ms="13612" started-at="2018-05-05T03:36:18Z" finished-at="2018-05-05T03:36:31Z">
+    <groups>
+    </groups>
+    <test name="TDBank Home" duration-ms="13612" started-at="2018-05-05T03:36:18Z" finished-at="2018-05-05T03:36:31Z">
+      <class name="test.authentication.InvalidOnlineBankingLoginTest">
+        <test-method status="PASS" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:test.authentication.InvalidOnlineBankingLoginTest@57536d79]" name="extentSetup" is-config="true" duration-ms="307" started-at="2018-05-04T23:36:17Z" finished-at="2018-05-04T23:36:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@58fb7731]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Extent Report DirectoryC:\Users\Kowser\IdeaProjects\group8_automation\TDBank\test-output\html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- extentSetup -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.authentication.InvalidOnlineBankingLoginTest@57536d79]" name="setUp" is-config="true" duration-ms="8935" started-at="2018-05-04T23:36:18Z" finished-at="2018-05-04T23:36:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[34]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.tdbank.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test.authentication.InvalidOnlineBankingLoginTest@57536d79]" name="startExtent" is-config="true" duration-ms="5" started-at="2018-05-04T23:36:26Z" finished-at="2018-05-04T23:36:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.authentication.InvalidOnlineBankingLoginTest.invalidLoginTest() throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="invalidLoginTest()[pri:0, instance:test.authentication.InvalidOnlineBankingLoginTest@57536d79]" name="invalidLoginTest" duration-ms="3670" started-at="2018-05-04T23:36:26Z" finished-at="2018-05-04T23:36:30Z">
+          <reporter-output>
+            <line>
+              <![CDATA[InvalidOnlineBankingLoginTest :invalid Login Test]]>
+            </line>
+            <line>
+              <![CDATA[InvalidOnlineBankingLogin :Invalid Login]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test.authentication.InvalidOnlineBankingLoginTest@57536d79]" name="afterEachTestMethod" is-config="true" duration-ms="985" started-at="2018-05-04T23:36:30Z" finished-at="2018-05-04T23:36:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidLoginTest status=SUCCESS method=InvalidOnlineBankingLoginTest.invalidLoginTest()[pri:0, instance:test.authentication.InvalidOnlineBankingLoginTest@57536d79] output=InvalidOnlineBankingLoginTest :invalid Login Test]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.authentication.InvalidOnlineBankingLoginTest@57536d79]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-04T23:36:31Z" finished-at="2018-05-04T23:36:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:test.authentication.InvalidOnlineBankingLoginTest@57536d79]" name="generateReport" is-config="true" duration-ms="63" started-at="2018-05-04T23:36:31Z" finished-at="2018-05-04T23:36:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- test.authentication.InvalidOnlineBankingLoginTest -->
+    </test> <!-- TDBank Home -->
+  </suite> <!-- TDBank Automation Test -->
+</testng-results>

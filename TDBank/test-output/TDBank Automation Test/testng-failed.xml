@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [TDBank Automation Test]">
+  <parameter name="useCloudEnv" value="false"/>
+  <parameter name="os" value="Windows"/>
+  <parameter name="os_version" value="Windows"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="cloudEnvName" value="browserstack"/>
+  <parameter name="url" value="https://www.tdbank.com/"/>
+  <test name="TDBank Home(failed)">
+    <classes>
+      <class name="test.authentication.InvalidOnlineBankingLoginTest">
+        <methods>
+          <include name="invalidLoginTest"/>
+          <include name="afterEachTestMethod"/>
+          <include name="generateReport"/>
+          <include name="extentSetup"/>
+          <include name="setUp"/>
+          <include name="afterMethod"/>
+          <include name="startExtent"/>
+        </methods>
+      </class> <!-- test.authentication.InvalidOnlineBankingLoginTest -->
+    </classes>
+  </test> <!-- TDBank Home(failed) -->
+</suite> <!-- Failed suite [TDBank Automation Test] -->
