@@ -22,7 +22,7 @@ public class ConnectDB {
 
     public static Properties loadProperties() throws IOException{
         Properties prop = new Properties();
-        InputStream ism = new FileInputStream("src/MySql.properties");
+        InputStream ism = new FileInputStream("C:\\Users\\Kowser\\IdeaProjects\\group8_automation\\Walmart\\secret.properties");
         prop.load(ism);
         ism.close();
         return prop;
@@ -173,14 +173,14 @@ public class ConnectDB {
         return data;
     }
 
-    public void InsertDataFromArryListToMySql(List<Object> list,String tableName, String columnName)
+    public void InsertDataFromArryListToMySql(List<String> list,String tableName, String columnName)
     //InsertDataFromArryListToMySql
     //  public void InsertDataFromArryToMySql()
     {
         try {
             connectToDatabase();
             //  connect.createStatement("INSERT into tbl_insertionSort set SortingNumbers=1000");
-            for(Object st:list){
+            for(String st:list){
                 // System.out.println(st);
 
                 ps = connect.prepareStatement("INSERT INTO "+tableName+" ( "+columnName+" ) VALUES(?)");

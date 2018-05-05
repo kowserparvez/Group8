@@ -11,7 +11,7 @@ import reporting.TestLogger;
  */
 public class InvalidOnlineBankingLoginTest extends CommonAPI{
     @Test
-    public void invalidLoginTest(){
+    public void invalidLoginTest() throws InterruptedException {
         TestLogger.log(getClass().getSimpleName()+ " :" +convertToString(new Object(){}.getClass().getEnclosingMethod().getName()));
         InvalidOnlineBankingLogin invalidOnlineBankingLogin = PageFactory.initElements(driver,InvalidOnlineBankingLogin.class);
         invalidOnlineBankingLogin.InvalidLogin();
