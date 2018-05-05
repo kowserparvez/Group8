@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[Extent Report DirectoryC:\Users\Kowser\IdeaProjects\group8_automation\Walmart\target\surefire-reports\html]]>
+    </line>
+  </reporter-output>
+  <suite name="Walmart Automation Test" duration-ms="20178" started-at="2018-05-04T15:26:36Z" finished-at="2018-05-04T15:26:57Z">
+    <groups>
+    </groups>
+    <test name="Walmart Tests" duration-ms="20178" started-at="2018-05-04T15:26:36Z" finished-at="2018-05-04T15:26:57Z">
+      <class name="test.homepage.TestDropDownMenu">
+        <test-method status="PASS" signature="extentSetup(org.testng.ITestContext)[pri:0, instance:test.homepage.TestDropDownMenu@17579e0f]" name="extentSetup" is-config="true" duration-ms="146" started-at="2018-05-04T11:26:36Z" finished-at="2018-05-04T11:26:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@aafcffa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Extent Report DirectoryC:\Users\Kowser\IdeaProjects\group8_automation\Walmart\target\surefire-reports\html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- extentSetup -->
+        <test-method status="PASS" signature="setUp(boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:test.homepage.TestDropDownMenu@17579e0f]" name="setUp" is-config="true" duration-ms="9120" started-at="2018-05-04T11:26:36Z" finished-at="2018-05-04T11:26:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[browserstack]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Windows]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[34]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.walmart.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method)[pri:0, instance:test.homepage.TestDropDownMenu@17579e0f]" name="startExtent" is-config="true" duration-ms="5" started-at="2018-05-04T11:26:46Z" finished-at="2018-05-04T11:26:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void test.homepage.TestDropDownMenu.testDropDownMenu()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startExtent -->
+        <test-method status="PASS" signature="testDropDownMenu()[pri:0, instance:test.homepage.TestDropDownMenu@17579e0f]" name="testDropDownMenu" duration-ms="10111" started-at="2018-05-04T11:26:46Z" finished-at="2018-05-04T11:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDropDownMenu -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:test.homepage.TestDropDownMenu@17579e0f]" name="afterEachTestMethod" is-config="true" duration-ms="928" started-at="2018-05-04T11:26:56Z" finished-at="2018-05-04T11:26:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDropDownMenu status=SUCCESS method=TestDropDownMenu.testDropDownMenu()[pri:0, instance:test.homepage.TestDropDownMenu@17579e0f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.homepage.TestDropDownMenu@17579e0f]" name="afterMethod" is-config="true" duration-ms="0" started-at="2018-05-04T11:26:57Z" finished-at="2018-05-04T11:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:test.homepage.TestDropDownMenu@17579e0f]" name="generateReport" is-config="true" duration-ms="27" started-at="2018-05-04T11:26:57Z" finished-at="2018-05-04T11:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+      </class> <!-- test.homepage.TestDropDownMenu -->
+    </test> <!-- Walmart Tests -->
+  </suite> <!-- Walmart Automation Test -->
+</testng-results>

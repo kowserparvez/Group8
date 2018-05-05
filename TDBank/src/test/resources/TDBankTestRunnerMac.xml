@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TDBank Automation Test" parallel="methods">
+
+
+    <parameter name="useCloudEnv" value="true"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="Windows"/>
+    <parameter name="os_version" value="Windows"/>
+    <parameter name="browserName" value="chrome"/>
+    <!--<parameter name="browserVersion" value="53.0"/>-->
+    <parameter name="url" value="https://www.tdbank.com/"/>
+
+
+    <test name = "TDBank Home">
+        <classes>
+            <class name="test.pages.HomePageTest"/>
+            <!--<class name="test.authentication.OnlineBankingLoginTest"/>-->
+            <!--<class name="test.authentication.InvalidOnlineBankingLoginTest"/>-->
+            <!--<class name="search.DropDownMenuSearch"/>-->
+        </classes>
+    </test>
+
+</suite>
