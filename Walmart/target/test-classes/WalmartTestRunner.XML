@@ -19,7 +19,9 @@
             <!--<class name="test.homepage.TestDropDownMenu"/>-->
             <!--<class name="test.homepage.TestSearchPage"/>-->
             <!--<class name="test.homepage.TestSelectFromMenu"/>-->
-            <class name="test.homepage.TestSignIn"/>
+            <!--<class name="test.homepage.TestSignIn"/>-->
+            <!--<class name="test.homepage.TestMultipleItemsSearch"/>-->
+            <class name="test.homepage.TestMultiUsingExcel"/>
         </classes>
     </test>
 

@@ -9,9 +9,9 @@
   <parameter name="url" value="https://www.walmart.com/"/>
   <test name="Walmart Tests(failed)">
     <classes>
-      <class name="test.homepage.TestSignIn">
+      <class name="test.homepage.TestMultiUsingExcel">
         <methods>
-          <include name="signInTest"/>
+          <include name="testWithExcel"/>
           <include name="afterEachTestMethod"/>
           <include name="generateReport"/>
           <include name="extentSetup"/>
@@ -19,7 +19,7 @@
           <include name="afterMethod"/>
           <include name="startExtent"/>
         </methods>
-      </class> <!-- test.homepage.TestSignIn -->
+      </class> <!-- test.homepage.TestMultiUsingExcel -->
     </classes>
   </test> <!-- Walmart Tests(failed) -->
 </suite> <!-- Failed suite [Walmart Automation Test] -->

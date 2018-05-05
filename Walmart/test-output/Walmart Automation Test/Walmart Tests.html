@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 04 23:20:44 EDT 2018</td>
+<td>Started on:</td><td>Sat May 05 01:21:31 EDT 2018</td>
 </tr>
-<tr><td>Total time:</td><td>9 seconds (9874 ms)</td>
+<tr><td>Total time:</td><td>9 seconds (9782 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,27 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.homepage.TestSignIn.signInTest()'><b>signInTest</b><br>Test class: test.homepage.TestSignIn</td>
+<td title='test.homepage.TestMultiUsingExcel.testWithExcel()'><b>testWithExcel</b><br>Test class: test.homepage.TestMultiUsingExcel<br/>
+<a href="#Output-549496397" onClick='toggleBox("Output-549496397", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-549496397" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-549496397">
+TestMultiUsingExcel: test With Excel<br/>
+MultiUsingExcel: search With Excel<br/>
+MultiUsingExcel: get Data From Excel File<br/>
+</div>
+</td>
 <td><div><pre>java.lang.NullPointerException
-	at homepage.SignIn.loginToWalmart(SignIn.java:15)
-	at test.homepage.TestSignIn.signInTest(TestSignIn.java:14)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1306246648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1306246648'><pre>java.lang.NullPointerException
-	at homepage.SignIn.loginToWalmart(SignIn.java:15)
-	at test.homepage.TestSignIn.signInTest(TestSignIn.java:14)
+	at utility.DataReader.fileReader(DataReader.java:50)
+	at homepage.MultiUsingExcel.getDataFromExcelFile(MultiUsingExcel.java:45)
+	at homepage.MultiUsingExcel.searchWithExcel(MultiUsingExcel.java:51)
+	at test.homepage.TestMultiUsingExcel.testWithExcel(TestMultiUsingExcel.java:21)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace549496397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace549496397'><pre>java.lang.NullPointerException
+	at utility.DataReader.fileReader(DataReader.java:50)
+	at homepage.MultiUsingExcel.getDataFromExcelFile(MultiUsingExcel.java:45)
+	at homepage.MultiUsingExcel.searchWithExcel(MultiUsingExcel.java:51)
+	at test.homepage.TestMultiUsingExcel.testWithExcel(TestMultiUsingExcel.java:21)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -109,7 +122,7 @@ function toggleAllBoxes() {
 	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
 </pre></div></td>
 <td>0</td>
-<td>test.homepage.TestSignIn@4b4523f8</td></tr>
+<td>test.homepage.TestMultiUsingExcel@57536d79</td></tr>
 </table><p>
 </body>
 </html>

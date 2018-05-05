@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Walmart_Automation_Test">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Walmart_Automation_Test" title="test.homepage.TestSignIn" hash-for-method="signInTest">signInTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Walmart_Automation_Test" title="test.homepage.TestMultiUsingExcel" hash-for-method="testWithExcel">testWithExcel</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Walmart_Automation_Test -->
@@ -120,17 +120,19 @@
           <div class="suite-Walmart_Automation_Test-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">test.homepage.TestSignIn</span>
+              <span class="class-name">test.homepage.TestMultiUsingExcel</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="signInTest">
-                  </a> <!-- signInTest -->
-                  <span class="method-name">signInTest</span>
+                  <a name="testWithExcel">
+                  </a> <!-- testWithExcel -->
+                  <span class="method-name">testWithExcel</span>
                   <div class="stack-trace">java.lang.NullPointerException
-	at homepage.SignIn.loginToWalmart(SignIn.java:15)
-	at test.homepage.TestSignIn.signInTest(TestSignIn.java:14)
+	at utility.DataReader.fileReader(DataReader.java:50)
+	at homepage.MultiUsingExcel.getDataFromExcelFile(MultiUsingExcel.java:45)
+	at homepage.MultiUsingExcel.searchWithExcel(MultiUsingExcel.java:51)
+	at test.homepage.TestMultiUsingExcel.testWithExcel(TestMultiUsingExcel.java:21)
 ... Removed 24 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -155,7 +157,7 @@
   &lt;parameter name=&quot;url&quot; value=&quot;https://www.walmart.com/&quot;/&gt;
   &lt;test name=&quot;Walmart Tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.homepage.TestSignIn&quot;/&gt;
+      &lt;class name=&quot;test.homepage.TestMultiUsingExcel&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Walmart Tests --&gt;
 &lt;/suite&gt; &lt;!-- Walmart Automation Test --&gt;
@@ -197,14 +199,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'signInTest')
-data.setCell(0, 2, 'test.homepage.TestSignIn')
-data.setCell(0, 3, 3);
+data.setCell(0, 1, 'testWithExcel')
+data.setCell(0, 2, 'test.homepage.TestMultiUsingExcel')
+data.setCell(0, 3, 239);
 window.suiteTableData['Walmart_Automation_Test']= { tableData: data, tableDiv: 'times-div-Walmart_Automation_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 ms</span>
+              <span class="suite-total-time">Total running time: 239 ms</span>
               <div id="times-div-Walmart_Automation_Test">
               </div> <!-- times-div-Walmart_Automation_Test -->
             </div> <!-- times-div -->
@@ -215,6 +217,14 @@ return data;
             <span class="header-content">Reporter output for Walmart Automation Test</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">testWithExcel</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">TestMultiUsingExcel: test With Excel</span>
+                <span class="reporter-method-output">MultiUsingExcel: search With Excel</span>
+                <span class="reporter-method-output">MultiUsingExcel: get Data From Excel File</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Walmart_Automation_Test" class="panel">
@@ -230,36 +240,36 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.homepage.TestSignIn</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.homepage.TestMultiUsingExcel</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
-                <span class="method-name">extentSetup(org.testng.TestRunner@40dff0b7)</span>
+                <span class="method-name">extentSetup(org.testng.TestRunner@3a1d593e)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(false, browserstack, Windows, Windows, chrome, 34, https://www.walmart.com/)</span>
-                <span class="method-start">325 ms</span>
+                <span class="method-start">453 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
-                <span class="method-name">startExtent(public void test.homepage.TestSignIn.signInTest() throws java.lang.InterruptedException)</span>
-                <span class="method-start">8574 ms</span>
+                <span class="method-name">startExtent(public void test.homepage.TestMultiUsingExcel.testWithExcel() throws java.io.IOException)</span>
+                <span class="method-start">8387 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">signInTest</span>
-                <span class="method-start">8580 ms</span>
+                <span class="method-name">testWithExcel</span>
+                <span class="method-start">8391 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterEachTestMethod([TestResult name=signInTest status=FAILURE method=TestSignIn.signInTest()[pri:0, instance:test.homep...)</span>
-                <span class="method-start">8587 ms</span>
+                <span class="method-name">afterEachTestMethod([TestResult name=testWithExcel status=FAILURE method=TestMultiUsingExcel.testWithExcel()[pri:0, inst...)</span>
+                <span class="method-start">8634 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">10164 ms</span>
+                <span class="method-start">10202 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">generateReport</span>
-                <span class="method-start">10192 ms</span>
+                <span class="method-start">10249 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

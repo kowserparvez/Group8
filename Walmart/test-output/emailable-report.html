@@ -9,13 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Walmart Automation Test</th></tr>
-<tr><td><a href="#t0">Walmart Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,874</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Walmart Tests</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">9,782</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Walmart Automation Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Walmart Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.homepage.TestSignIn</td><td><a href="#m0">signInTest</a></td><td rowspan="1">1525490452684</td><td rowspan="1">3</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Walmart Automation Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Walmart Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.homepage.TestMultiUsingExcel</td><td><a href="#m0">testWithExcel</a></td><td rowspan="1">1525497699238</td><td rowspan="1">239</td></tr></tbody>
 </table>
-<h2>Walmart Tests</h2><h3 id="m0">test.homepage.TestSignIn#signInTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
-	at homepage.SignIn.loginToWalmart(SignIn.java:15)
-	at test.homepage.TestSignIn.signInTest(TestSignIn.java:14)
+<h2>Walmart Tests</h2><h3 id="m0">test.homepage.TestMultiUsingExcel#testWithExcel</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">TestMultiUsingExcel: test With Excel<br/>MultiUsingExcel: search With Excel<br/>MultiUsingExcel: get Data From Excel File</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at utility.DataReader.fileReader(DataReader.java:50)
+	at homepage.MultiUsingExcel.getDataFromExcelFile(MultiUsingExcel.java:45)
+	at homepage.MultiUsingExcel.searchWithExcel(MultiUsingExcel.java:51)
+	at test.homepage.TestMultiUsingExcel.testWithExcel(TestMultiUsingExcel.java:21)
 ... Removed 24 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
