@@ -17,16 +17,15 @@ public class HomePage extends CommonAPI {
     WebElement search;
 
     public void menu() {
-        //  waitUntilClickAble (By.xpath ( "//*[@id='menu']"));
         menu.click ();
     }
-
     public void clickon() {
         clickon.click ();
     }
-
     public void search() {
-      //  waitUntilClickAble (By.xpath ( "//input[@class='search__input-field']"));
+       // waitUntilClickAble (By.xpath ( "//input[@class='search__input-field']"));
         search.sendKeys ( "world news" );
-    }
+
+        }
 }
+
