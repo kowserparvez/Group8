@@ -37,8 +37,8 @@ import java.util.concurrent.TimeUnit;
 
 public class CommonAPI {
     public WebDriver driver = null;
-    public String browserstack_username= "your user name";
-    public String browserstack_accesskey = "your access key";
+    public String browserstack_username= "sayedsiddeque1";
+    public String browserstack_accesskey = "HwhmarrowiBBbzuzQqxP";
     public String saucelabs_username = "";
     public String saucelabs_accesskey = "";
     //ExtentReport
@@ -100,7 +100,7 @@ public class CommonAPI {
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("false")String cloudEnvName,
                       @Optional("OS X") String os,@Optional("10") String os_version, @Optional("firefox") String browserName, @Optional("34")
                               String browserVersion, @Optional("http://www.ebay.com") String url)throws IOException {
-        System.setProperty("webdriver.chrome.driver", "/Users/peoplentech/eclipse-workspace-March2018/SeleniumProject1/driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/Users/sayedsiddeque/Development/Group8/Generic/browser-driver/chromedriver");
         if(useCloudEnv==true){
             if(cloudEnvName.equalsIgnoreCase("browserstack")) {
                 getCloudDriver(cloudEnvName,browserstack_username,browserstack_accesskey,os,os_version, browserName, browserVersion);

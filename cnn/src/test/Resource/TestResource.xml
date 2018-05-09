@@ -14,7 +14,7 @@
     <test name = "cnn Home">
         <classes>
             <class name="Home.TestHome"/>
-            <class name="Home.TestSearchPage"/>
+            <class name="Home.TestUS"/>
         </classes>
     </test>
 

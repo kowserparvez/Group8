@@ -15,12 +15,11 @@
         <module>Facebook</module>
         <module>Walmart</module>
         <module>TDBank</module>
-        <module>Netflix</module>
         <module>MetroPlus</module>
         <module>Ebay</module>
         <module>cnn</module>
+        <module>NetFlix</module>
     </modules>
-
     <dependencyManagement>
         <dependencies>
             <dependency>

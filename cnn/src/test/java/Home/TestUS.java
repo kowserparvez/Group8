@@ -7,7 +7,6 @@ public class TestUS extends ClickUS {
     @Test
     public void test3() {
         ClickUS sp = PageFactory.initElements ( driver, ClickUS.class );
-
         sp.us ();
     }
 }

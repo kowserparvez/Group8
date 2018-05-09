@@ -16,7 +16,6 @@ public class SerchPage extends CommonAPI {
 
     public void search() {
         search.sendKeys ( "world news" );
-
     }
     public void us(){
         us.click ();
